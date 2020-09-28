@@ -122,7 +122,7 @@ Date:   Thu Sep 24 02:38:45 2020 +0000
 
     Repo init
 ```
-"Security Enhance?" With `git show 179e12491a2628c71bb854514f3b05cdf7cb546d` we can take a closer look at what that commit changed:
+"Security enhance?" With `git show 179e12491a2628c71bb854514f3b05cdf7cb546d` we can take a closer look at what that commit changed:
 ```
 commit 179e12491a2628c71bb854514f3b05cdf7cb546d
 Author: DC <haxor@ekoparty.org>
@@ -214,7 +214,7 @@ if(!function_exists('auth'))
 
 The `auth` function reads a password from the user, hashes it, stores that hash on the **client-side** (in a cookie), then compares that to the correct password hash. So, given the correct hash, we can create our own "pass" cookie and log in without knowing the password!
 
-If we do that with the hardcoded hash from before the "Security Enhance" commit, we get in! From here we can access the parent directory and find a file named `flag`:
+If we do that with the hardcoded hash from before the "Security enhance" commit, we get in! From here we can access the parent directory and find a file named `flag`:
 ```
 EKO{m4st3r_0f_g1t}
 ```
