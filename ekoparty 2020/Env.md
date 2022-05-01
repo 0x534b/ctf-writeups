@@ -229,7 +229,7 @@ except Exception as e:
     sys.exit(1)
 ```
 
-Woah hold on just one second! I see a call to `os.system`, with unsterilized user input no less! All we need to do is open an issue on ekoparty2020/ekolabs with "very important" in the title and we can escape `echo`'s quotes and run our own command by putting something like `" command #` in the body.
+Woah hold on just one second! I see a call to `os.system`, with unsanitized user input no less! All we need to do is open an issue on ekoparty2020/ekolabs with "very important" in the title and we can escape `echo`'s quotes and run our own command by putting something like `" command #` in the body.
 
 So now that we can run shell commands, how can we get their output? There are a few ways you could do this, including setting up a reverse shell, but we only really need one output (the REPORT_TOKEN env var) so I just set up a [request bin](https://requestbin.com/) to record an `http` request. We don't know if `curl` is installed on the server, so instead we can make our request with a built-in `python` module whe we know they have installed. Here's what my payload looked like:
 ```
