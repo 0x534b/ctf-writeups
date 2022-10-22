@@ -21,8 +21,8 @@ iot, hardware
 Interfacing with the Hardware
 
 # Challenge Points
-Part 1: 50 pts
-Part 2: 50 pts
+Part 1: 50 pts\
+Part 2: 50 pts\
 Part 3: 75 pts
 
 # Challenge Description
